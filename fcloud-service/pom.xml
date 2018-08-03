@@ -9,19 +9,20 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>fcloud-config</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>fcloud-service</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>service-A</module>
+        <module>service-B</module>
+    </modules>
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
+
 
 
 </project>
