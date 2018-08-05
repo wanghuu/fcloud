@@ -13,6 +13,7 @@
         <module>fcloud-config</module>
         <module>fcloud-config-client</module>
         <module>fcloud-service</module>
+        <module>fcloud-registry</module>
     </modules>
     <!--<packaging>pom</packaging>-->
     <parent>
@@ -38,26 +39,6 @@
                 <version>Cairo-RELEASE</version>
                 <type>pom</type>
             </dependency>
-
-
         </dependencies>
     </dependencyManagement>
-    <dependencies>
-        <!--<dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>-->
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
-        <!-- <dependency>
-             <groupId>org.springframework.boot</groupId>
-             <artifactId>spring-boot-starter-actuator</artifactId>
-         </dependency>-->
-
-    </dependencies>
-
 </project>

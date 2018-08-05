@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: registry
+  cloud:
+    zookeeper:
+      connect-string: 127.0.0.1:2181
+      discovery:
+        enabled: true
+
+
+server:
+  port: 9000
