@@ -1,4 +1,4 @@
-package me.frank.cloud.registry;
+package me.frank.cloud.discovery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,8 +6,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class RegistryServer {
+public class DiscoveryApplication {
     public static void main(String[] args) {
-        SpringApplication.run(RegistryServer.class);
+        SpringApplication.run(DiscoveryApplication.class);
     }
 }

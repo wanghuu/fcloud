@@ -1,8 +1,5 @@
-server:
-  port: 0
-spring:
+sping:
   profiles:
     active: dev
   application:
     name: config-client
-

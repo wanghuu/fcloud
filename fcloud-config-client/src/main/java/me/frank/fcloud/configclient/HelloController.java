@@ -1,5 +1,6 @@
 package me.frank.fcloud.configclient;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,9 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
+    @Value("${name}")
+    private String name;
+
 
     @GetMapping("/config/env")
     public ResponseEntity getName(){
-        return ResponseEntity.ok("It's ");
+        return ResponseEntity.ok("It's "+name);
     }
 }

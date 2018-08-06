@@ -5,5 +5,4 @@ spring:
       discovery:
         service-id: config-server
         enabled: true
-      label: dev
       profile: dev
