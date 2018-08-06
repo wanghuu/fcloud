@@ -1,6 +1,6 @@
-server:
-  port: 1001
-
 spring:
+  profiles:
+    active: dev
   application:
-    name: fcloud-config-client
+    name: config-client
+
