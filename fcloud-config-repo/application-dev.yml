@@ -4,7 +4,6 @@ server:
     uri-encoding: UTF-8
     remote-ip-header: x-forwarded-for
   use-forward-headers: true
-  port: 0
 
 #redis配置
 redis:

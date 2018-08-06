@@ -3,5 +3,5 @@ spring:
     config:
       server:
         git:
-          uri: ${config.repo.uri:https://github.com/wanghuu/spring-cloud-config.git}
-          searchPaths: respo
+          uri: ${config.repo.uri:https://github.com/wanghuu/fcloud.git}
+          searchPaths: fcloud-repo
