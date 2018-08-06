@@ -9,10 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0</version>
     <modules>
-        <module>fcloud-config</module>
+        <module>fcloud-config-server</module>
         <module>fcloud-config-client</module>
         <module>fcloud-service</module>
         <module>fcloud-discovery</module>
+        <module>fcloud-common</module>
     </modules>
     <!--<packaging>pom</packaging>-->
     <parent>
@@ -20,6 +21,27 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.1.RELEASE</version>
     </parent>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <springfox.version>2.6.1</springfox.version>
+        <commons-codec.version>1.10</commons-codec.version>
+        <jjwt.version>0.7.0</jjwt.version>
+        <codehaus-jackson.version>1.9.13</codehaus-jackson.version>
+        <mybatis-starter-version>1.2.0</mybatis-starter-version>
+        <mybatis.plus.version>2.0.7</mybatis.plus.version>
+        <druid.version>1.0.29</druid.version>
+        <curator.version>2.10.0</curator.version>
+        <mysql.version>5.1.39</mysql.version>
+        <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
+        <maven-javadoc-plugin.version>2.10.4</maven-javadoc-plugin.version>
+        <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
+        <guava.version>17.0</guava.version>
+        <boot.admin.version>1.5.7</boot.admin.version>
+        <fastjson.version>1.2.29</fastjson.version>
+    </properties>
+
     <dependencyManagement>
 
         <dependencies>
@@ -38,6 +60,129 @@
                 <version>Cairo-RELEASE</version>
                 <type>pom</type>
             </dependency>
+            <!-- google java lib -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+            <!-- swagger cloud start -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${springfox.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${springfox.version}</version>
+            </dependency>
+            <!-- swagger cloud end -->
+            <!--lombok-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.16.14</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${commons-codec.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.5</version>
+            </dependency>
+            <!--excel导出-->
+            <dependency>
+                <groupId>com.github.crab2died</groupId>
+                <artifactId>Excel4J</artifactId>
+                <version>2.1.3</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-core</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatisplus-spring-boot-starter</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <scope>test</scope>
+            </dependency>
+            <!--hibernate validator-->
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-validator</artifactId>
+            </dependency>
+
+            <!-- 模板引擎 -->
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity</artifactId>
+                <version>1.7</version>
+            </dependency>
+
+            <dependency>
+                <groupId>eu.bitwalker</groupId>
+                <artifactId>UserAgentUtils</artifactId>
+                <version>1.20</version>
+            </dependency>
+            <!-- http://www.hutool.cn/ -->
+            <dependency>
+                <groupId>com.xiaoleilu</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>3.0.7</version>
+            </dependency>
+
+            <!-- alipay start-->
+            <dependency>
+                <groupId>com.alipay</groupId>
+                <artifactId>alipay-sdk-java</artifactId>
+                <version>20170725114550</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alipay</groupId>
+                <artifactId>alipay-trade-sdk</artifactId>
+                <version>20161215</version>
+            </dependency>
+            <!-- alipay end-->
         </dependencies>
     </dependencyManagement>
 
