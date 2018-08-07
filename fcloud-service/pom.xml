@@ -26,6 +26,17 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-core</artifactId>
+            <version>1.4.4.RELEASE</version>
+        </dependency>
+
         <dependency>
             <groupId>me.frank</groupId>
             <artifactId>fcloud-common-core</artifactId>
