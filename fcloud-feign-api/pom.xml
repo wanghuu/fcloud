@@ -9,22 +9,30 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>fcloud-service</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>fcloud-feign-client</artifactId>
+    <description>Feign-client Demo</description>
     <modules>
-        <module>item-service</module>
-        <module>user-service</module>
+        <module>fcloud-feign-user-api</module>
+        <module>fcloud-feign-item-api</module>
     </modules>
+    <packaging>pom</packaging>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!-- Config Client -->
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
+            <artifactId>spring-cloud-netflix-core</artifactId>
+            <version>1.4.4.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>me.frank</groupId>
@@ -36,8 +44,8 @@
             <artifactId>fcloud-common-base</artifactId>
             <version>1.0</version>
         </dependency>
-    </dependencies>
 
+    </dependencies>
 
 
 </project>

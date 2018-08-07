@@ -14,6 +14,7 @@
         <module>fcloud-service</module>
         <module>fcloud-discovery</module>
         <module>fcloud-common</module>
+        <module>fcloud-feign-demo</module>
     </modules>
     <!--<packaging>pom</packaging>-->
     <parent>
