@@ -1,4 +1,4 @@
 spring:
   application:
-    name: user-provider
+    name: user-service
   profiles: dev

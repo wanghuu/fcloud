@@ -3,6 +3,6 @@ spring:
     config:
       server:
         git:
-#          uri: ${config.repo.uri:https://github.com/wanghuu/fcloud.git}
-          uri: ${user.dir}/fcloud-config-repo/
+          uri: ${config.repo.uri:https://github.com/wanghuu/fcloud.git}
+          #uri: ${user.dir}/fcloud-config-repo/
           searchPaths: fcloud-config-repo

@@ -1,4 +1,4 @@
 spring:
   application:
-    name: provider-provider
+    name: item-service
   profiles: dev
